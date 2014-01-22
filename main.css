@@ -1,11 +1,12 @@
 body{
-
+  -webkit-font-smoothing:antialiased;
+  background-color:#27303E;
+  color:#fff;
 }
 
-
 .wrapper{
-  width:40%;
-  margin:200px 0 0 40%;
+  width:70%;
+  margin:100px 0 0 5%;
 }
 
 .message{
@@ -14,10 +15,19 @@ body{
   line-height:1.65em;
 }
 
+.brand{
+  margin-bottom:100px;
+}
+
+.content{
+  margin-bottom:100px;
+}
+
 #mc_embed_signup{
   clear:left;
   font:14px "Open Sans", Helvetica,Arial,sans-serif;
   width:100%;
+  max-width:700px;
   margin-bottom: 0;
   padding-bottom: 0;
   font-weight: normal;
@@ -25,7 +35,7 @@ body{
 
 #mc_embed_signup form{
   padding: 0;
-  margin:100px 0 0 0 ;
+  margin:0 0 0 0 ;
 }
 
 #mc_embed_signup .button {
@@ -42,12 +52,15 @@ body{
 
 #mc_embed_signup input.button {
   display: block;
-  background-color: #000;
+  background-color: #dadada;
   width: 30%;
   margin: 0;
   min-width: 90px;
   float:left;
   font-size:15px;
+  font-weight:normal;
+  color:#27303E;
+  height:45px;
 
   border-radius: 0px;
   -webkit-border-radius:0px;
@@ -69,9 +82,10 @@ body{
   width: 67%;
   min-width: 130px;
   float:left;
-  border: 3px solid #f0f0f0;
+  border: none;
   border-right: none;
   font-size: 15px;
+  height:25px;
 
   -webkit-border-top-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
