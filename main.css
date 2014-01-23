@@ -2,11 +2,43 @@ body{
   -webkit-font-smoothing:antialiased;
   background-color:#27303E;
   color:#fff;
+  font-family:"Open Sans", sans-serif;
+}
+
+h2{
+  font-weight:600;
+  font-size:0.8em;
+}
+
+.content a{
+  color:#fff;
+  padding-bottom:2px;
+  border-bottom:2px solid #fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.col-one{
+  width:30%;
+  float:left;
+  border-top:1px solid #fff;
+  margin-right: 3%;
+  opacity:0.20;
+}
+
+.col-two{
+  width:60%;
+  float:left;
+}
+
+.col-three{
+  width:90%;
+  float:left;
 }
 
 .wrapper{
-  width:70%;
-  margin:100px 0 0 5%;
+  width:90%;
+  margin:40px auto;
 }
 
 .message{
@@ -16,20 +48,26 @@ body{
 }
 
 .brand{
-  margin-bottom:100px;
-  width:400px;
+  margin-bottom:20px;
+  margin-top:60px;
+  width:50%;
   height:auto;
 }
 
 .content{
-  margin-bottom:100px;
+  margin-bottom:75px;
+  width:66%;
+}
+
+.twitter-follow-button{
+  margin-top:40px;
 }
 
 #mc_embed_signup{
   clear:left;
   font:14px "Open Sans", Helvetica,Arial,sans-serif;
-  width:100%;
-  max-width:700px;
+  width:66%;
+  max-width:800px;
   margin-bottom: 0;
   padding-bottom: 0;
   font-weight: normal;
@@ -46,6 +84,9 @@ body{
   padding: 10px 0;
   margin:0;
   line-height:23px;
+}
+#mc_embed_signup input.button:hover {
+  background-color: #ccc;
 }
 
 #mc_embed_signup .button:focus {
@@ -100,4 +141,6 @@ body{
 #mc_embed_signup input.email:focus {
   outline:none;
 }
+
+
 
