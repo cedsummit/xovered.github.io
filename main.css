@@ -17,6 +17,8 @@ body{
 
 .brand{
   margin-bottom:100px;
+  width:400px;
+  height:auto;
 }
 
 .content{
