@@ -3,10 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <title>X / ED slides</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+  body{
+    text-align:center;
+    font-size:3.0em;
+    font-family:'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  section{
+    margin:0 auto;
+    width:100%;
+    overflow:hidden;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  h1{
+    font-weight: normal;
+    margin:0;
+    padding:10px 0;
+  }
+
+  h2{
+    font-weight: normal;
+    font-size:0.5em;
+  }
+
+  h3{
+    font-weight: normal;
+    font-size: 0.4em;
+  }
+
+  .team-heading{
+    padding-bottom: 50px;
+  }
+
+  .member{
+    width:20%;
+    float: left;
+    padding: 0 2%;
+  }
+
+  .member img{
+    border-radius:50%;
+    width: 90%;
+    height: auto;
+  }
+
+  .fa{
+    color: #ccc;
+    font-size: 1.0em;
+    padding-right: 50px;
+  }
+
+  .v-center{
+  }
+
+  .brand, .team, .contact{
+
+  }
+
+  .cf:before,
+  .cf:after {
+      content: " ";
+      display: table;
+  }
+
+  .cf:after {
+      clear: both;
+  }
+
+  .cf {
+      *zoom: 1;
+  }
+  </style>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
-  <section class="brand"></section>
-  <section class="team"></section>
-  <section class="contact"></section>
+  <section id="#top" class="brand">
+    <div class="v-center">
+      <img src="img/xovered-logo-truncated.svg" class="logo" alt="brand" />
+      <h1>MAY 30 &mdash; JUNE 08</h1>
+    </div>
+  </section>
+
+  <section id="middle" class="team">
+
+    <div class="v-center">
+      <h1 class="team-heading">The Team</h1>
+      <div class="cf team-photos">
+        <div class="member">
+          <img src="img/allan.png" width="300" height="300" alt="Allan">
+          <h2>Allan C. Lloyds</h2>
+          <h3>Team Leader</h3>
+        </div>
+        <div class="member">
+          <img src="img/shaun.png" width="300" height="300" alt="Profile">
+          <h2>Shaun Dowling</h2>
+          <h3>Design &amp; Web Development</h3>
+        </div>
+        <div class="member">
+          <img src="img/profile.png" width="300" height="300" alt="Profile">
+          <h2>?</h2>
+          <h3>Events Managment</h3>
+        </div>
+        <div class="member">
+          <img src="img/tiana.png" width="300" height="300" alt="Tiana">
+          <h2>Tiana Sperber</h2>
+          <h3>Creative Marketing</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bottom" class="contact">
+    <div class="v-center">
+      <h1><i class="fa fa-desktop"></i><a href="http://xovered.com">xovered.com</a></h1>
+      <h1><i class="fa fa-twitter"></i>@xovered</h1>
+      <h1><i class="fa fa-envelope-o"></i>team@xovered.com</h1>
+
+    </div>
+  </section>
+
+  <section class="blank"></section>
+
+  <script>
+  $(document).ready(function () {
+    var windowHeight = $(window).height();
+
+    var locations = ['#top', '#middle', '#bottom'];
+
+    $('section').css('height', windowHeight.toString());
+
+    $('section').each(function (index) {
+      var sectionHeight = $(this).height();
+      var halfSection = sectionHeight/2;
+      var divHeight = $(this).find('.v-center').height();
+      var paddingTop = halfSection - (divHeight/2);
+      $(this).first('div').css('padding-top', paddingTop + 'px');
+    });
+
+    var counter = 0;
+
+    $(window).keypress(function (e) {
+      scrollTo(locations[counter]);
+      if(counter === 2){
+        counter = 0;
+      } else {
+        counter++;
+      }
+    });
+
+    function scrollTo(hash) {
+        location.hash = hash;
+    }
+  });
+
+
+  </script>
 </body>
 </html>
