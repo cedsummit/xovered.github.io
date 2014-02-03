@@ -156,7 +156,7 @@
     $('section').each(function (index) {
       var sectionHeight = $(this).height();
       var divHeight = $(this).find('.v-center').height();
-      var paddingTop = (sectionHeight / 2) - (divHeight / 2);
+      var paddingTop = (windowHeight / 2) - (divHeight / 2);
       $(this).first('div').css('padding-top', paddingTop + 'px');
     });
 
