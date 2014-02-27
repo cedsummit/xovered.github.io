@@ -1,0 +1,37 @@
+// Framework
+@import "bourbon/bourbon";
+@import "partials/grid-settings";
+@import "neat/neat";
+
+//Partials
+@import "partials/base";
+@import "partials/header";
+@import "partials/buttons";
+@import "partials/typography";
+@import "partials/modules";
+@import "partials/events";
+@import "partials/mailer";
+@import "partials/team";
+@import "partials/speakers";
+@import "partials/sponsors";
+@import "partials/blog";
+@import "partials/footer";
+
+body, html{
+  height:100%;
+}
+
+body{
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: $primary-color;
+  font-size: 16px;
+  overflow-y:scroll;
+  background-color: $primary-color;
+}
+
+.grid-container{
+  @include outer-container;
+}
+

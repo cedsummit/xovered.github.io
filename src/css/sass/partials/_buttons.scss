@@ -1,0 +1,36 @@
+.button{
+  font-weight: 600;
+  padding: 10px 5%;
+  background:none;
+  color: #fff;
+  border: 2px solid #fff;
+  outline:none;
+}
+
+.button:focus{
+  outline:none;
+}
+
+.button:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.button-dark{
+  font-weight: 600;
+  padding: 10px 5%;
+  background:none;
+  color: $primary-color;
+  border: 3px solid $primary-color;
+  outline:none;
+}
+
+.button-dark:hover{
+  font-weight: 600;
+  padding: 10px 5%;
+  background:$primary-color;
+  color: #fff;
+  border: 3px solid $primary-color;
+  outline:none;
+}
+

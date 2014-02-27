@@ -1,1 +1,8 @@
+node_modules/
+npm-debug.log
+.sass-cache
+components/
+bourbon/
+neat/
 .DS_Store
+NOTES

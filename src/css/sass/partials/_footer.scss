@@ -1,0 +1,40 @@
+footer{
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.footer-col{
+  @include span-columns(3);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-col:first-of-type{
+  @include shift(3);
+}
+
+.footer-menu{
+  list-style-type: none;
+  font-size: 1.125em;
+  padding:0;
+}
+
+.menu-header{
+  font-family: $alt-font-family;
+  padding-bottom: 3px;
+  border-bottom: 2px solid $secondary-color;
+  display:inline-block;
+}
+
+.footer-menu{
+  font-size: 1.25em;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: $secondary-color;
+  }
+}

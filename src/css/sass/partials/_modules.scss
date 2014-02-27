@@ -1,0 +1,76 @@
+.content-module{
+  background-color: #fff;
+  border-bottom: 1px solid $border-color;
+}
+
+.module-row{
+  @include span-columns(12);
+}
+
+.module-col:nth-of-type(1){
+  @include span-columns(5);
+  padding-top: 30px;
+}
+
+.module-col:nth-of-type(2){
+  position: relative;
+  @include span-columns(6);
+  @include shift(1);
+  padding-top: 30px;
+  padding-bottom: 100px;
+  border-left: 1px solid $border-color;
+  padding-left:$column + $gutter;
+}
+
+.lead-about{
+  position: absolute;
+  bottom: 0;
+}
+.conf-header{
+  font-size: 50px;
+  font-family: $alt-font-family;
+  color: $primary-color;
+  padding-top: 140px;
+  margin-bottom: 0;
+  opacity: 0.96;
+}
+
+.prod-header{
+  font-size: 50px;
+  font-family: $alt-font-family;
+  color: $primary-color;
+  padding-top: 140px;
+  margin-bottom: 0;
+  opacity: 0.96;
+}
+
+.event-date{
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 32px;
+}
+
+.no-border{
+  position: relative;
+  @include span-columns(6);
+  @include shift(1);
+  padding-top: 30px;
+  padding-left:$column + $gutter;
+}
+
+img{  width: 100%; height:auto; }
+
+.venues-img{
+  padding-top: 0px;
+  border-top: 4px solid $primary-color;
+}
+
+.headers{
+  background: url(../../../img/venues.png) no-repeat;
+  height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}

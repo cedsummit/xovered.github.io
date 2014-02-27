@@ -1,0 +1,15 @@
+{
+  "name": "xovered",
+  "version": "0.0.1",
+  "discription": "xovered events site",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.7.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-shell": "~0.6.4"
+  },
+  "dependencies": {
+    "bower": "~1.2.8"
+  }
+}

@@ -1,0 +1,52 @@
+#mailer{
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.mailer-container{
+  @include span-columns(8);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.mailer-illustration{
+  @include span-columns(4);
+  padding-top: 200px;
+  font-size: 6.0em;
+  color: darken($primary-color, 2%);
+  text-align: center;
+}
+
+.mailer-message{
+  font-size: 1.9em;
+}
+
+.mailer-form{
+  margin-top: 50px;
+}
+
+.email{
+  width: 60%;
+  float: left;
+  padding: 10px 2%;
+  background-color: $primary-color;
+  border: 5px solid $border-color-light;
+  border-right: none;
+}
+
+.email:focus{
+  outline:none;
+  border: 5px solid lighten($border-color-light, 5%);
+}
+
+.submit-button{
+  background-color: $border-color-light;
+  border: 5px solid $border-color-light;
+  color: #fff;
+}
+
+.submit-button:hover{
+  background-color: $primary-color;
+  border: 5px solid $border-color-light;
+  color: #fff;
+}

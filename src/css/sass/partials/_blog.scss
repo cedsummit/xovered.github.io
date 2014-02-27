@@ -1,0 +1,52 @@
+#blog{
+  background-color: #fff;
+}
+
+.blog-header{
+  display: block;
+  font-family: $alt-font-family;
+  font-weight: normal;
+  font-size: 1.0em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blog-title{
+  padding:0;
+  margin: 0;
+}
+
+.blog-link{
+  @include span-columns(9);
+}
+
+.push-three{
+  @include span-columns(9);
+  @include shift(3);
+}
+
+.bar {
+  border-bottom: 1px solid $border-color;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
+.bar:first-of-type{
+  border-top: 1px solid $border-color;
+}
+
+
+.bar:hover{
+  background-color: $border-color;
+}
+
+.post-date{
+  @include span-columns(3);
+}
+
+.blog-button-bar{
+  @include span-columns(3);
+  @include shift(3);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

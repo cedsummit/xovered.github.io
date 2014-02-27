@@ -1,0 +1,42 @@
+#sponsors{
+  background-color: #eee;
+}
+
+.sponsor{
+  @include span-columns(3);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-right: 1px solid $border-color;
+  text-align: center;
+}
+
+.sponsor-container{
+  border-bottom: 1px solid $border-color;
+  @include outer-container;
+}
+
+.sponsor:nth-of-type(4n){
+  @include omega;
+  border-right: none;
+}
+
+.sponsor img {
+  width: 50%;
+}
+
+.sponsor-message{
+  padding-top: 120px;
+  padding-bottom: 100px;
+  @include shift(3);
+  @include span-columns(3);
+}
+
+.ia-logo{
+  opacity:0.2;
+  display: block;
+  transition:opacity 0.5s ease;
+}
+
+.ia-logo:hover{
+  opacity:0.9;
+}
